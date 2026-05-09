@@ -1,7 +1,10 @@
 function Footer() {
   return (
     <footer>
-      <p>&copy; {new Date().getFullYear()} Portfolio</p>
+      <div className="footer-inner">
+        <span>&copy; {new Date().getFullYear()} Anthony Ballestra</span>
+        <span>Baguio, PH</span>
+      </div>
     </footer>
   )
 }
