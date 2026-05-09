@@ -1,12 +1,10 @@
-function Footer() {
+export default function Footer() {
   return (
     <footer>
       <div className="footer-inner">
-        <span>&copy; {new Date().getFullYear()} Anthony Ballestra</span>
-        <span>Baguio, PH</span>
+        <span>© {new Date().getFullYear()} Anthony Ballestra</span>
+        <span>Baguio, Philippines</span>
       </div>
     </footer>
   )
 }
-
-export default Footer

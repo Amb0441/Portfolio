@@ -1,29 +1,34 @@
-const HERO_IMG = '/PROFILE.png'
+const IMG = '/PROFILE.png'
 
-function Hero() {
+export default function Hero() {
   return (
     <section id="hero">
       <div className="hero-inner">
         <div className="hero-text">
-          <p className="hero-available">&#x25cf;&nbsp; Available for work</p>
-          <h1>ANTHONY<br />BALLESTRA</h1>
-          <p className="hero-desc">
-            Full-stack developer. I build clean, thoughtful web applications
-            and care deeply about the details.
+          <span className="hero-badge">
+            <span className="dot" />
+            Available for work
+          </span>
+
+          <h1 className="hero-name">
+            Anthony<br />Ballestra
+          </h1>
+
+          <p className="hero-role">
+            Full-stack developer based in Baguio, Philippines.
+            I build clean, performant web applications with sharp attention to detail.
           </p>
-          <div className="hero-links">
-            <a href="#projects" className="btn-primary">View work</a>
-            <a href="#contact" className="btn-ghost">Get in touch</a>
+
+          <div className="hero-cta">
+            <a href="#projects" className="btn btn-dark">View projects</a>
+            <a href="#contact"  className="btn btn-light">Get in touch</a>
           </div>
         </div>
-        <div className="hero-image">
-          <div className="img-wrap">
-            <img src={HERO_IMG} alt="Anthony Ballestra" />
-          </div>
+
+        <div className="hero-photo">
+          <img src={IMG} alt="Anthony Ballestra" />
         </div>
       </div>
     </section>
   )
 }
-
-export default Hero

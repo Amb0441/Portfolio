@@ -1,46 +1,47 @@
-const ABOUT_IMG = '/PROFILE.png'
+const IMG = '/PROFILE.png'
 
 const skills = [
-  { cat: 'Frontend', items: ['React', 'TypeScript', 'CSS', 'Vite'] },
-  { cat: 'Backend', items: ['Node.js', 'PostgreSQL', 'REST', 'GraphQL'] },
-  { cat: 'Tooling', items: ['Git', 'Docker', 'Linux', 'CI/CD'] },
+  { cat: 'Frontend',  items: ['React', 'TypeScript', 'CSS / Tailwind', 'Vite'] },
+  { cat: 'Backend',   items: ['Node.js', 'PostgreSQL', 'REST', 'GraphQL'] },
+  { cat: 'Tooling',   items: ['Git', 'Docker', 'Linux', 'CI/CD'] },
 ]
 
-function About() {
+export default function About() {
   return (
     <section id="about">
-      <div className="about-inner">
-        <p className="section-label">About</p>
-        <h2 className="section-title">Who I am</h2>
+      <div className="wrap">
+        <div className="section-head">
+          <span className="label">About</span>
+          <h2>Who I am</h2>
+        </div>
 
         <div className="about-grid">
-          <div className="about-image">
-            <img src={ABOUT_IMG} alt="Anthony Ballestra" />
+          <div className="about-photo">
+            <img src={IMG} alt="Anthony Ballestra" />
           </div>
 
-          <div className="about-bio">
+          <div className="about-body">
             <p>
-              Full-stack developer based in Baguio, Philippines. I focus on building
-              clean, performant web applications — from architecture decisions down
-              to typography.
+              I'm a full-stack developer focused on building clean, performant
+              web applications — from architecture decisions down to the
+              last pixel of typography.
             </p>
             <p>
-              When I'm not coding, I'm out in the mountains or working on
-              side projects I can't leave alone.
+              Currently finishing my BS in Information Technology at the University
+              of the Cordilleras. When I'm not at the keyboard, I'm exploring
+              Baguio's trails or obsessing over a side project.
             </p>
             <p>
-              I use AI tools to accelerate my workflow — letting me focus on
-              architecture, design, and the details that matter.
+              I leverage AI tools to ship faster while staying focused on
+              the problems that actually matter — design, architecture, and user experience.
             </p>
 
-            <div className="skills">
+            <div className="skills-grid">
               {skills.map(({ cat, items }) => (
-                <div key={cat} className="skill-group">
+                <div key={cat} className="skill-col">
                   <p className="skill-cat">{cat}</p>
-                  <div className="skill-tags">
-                    {items.map(item => (
-                      <span key={item} className="skill-tag">{item}</span>
-                    ))}
+                  <div className="skill-list">
+                    {items.map(item => <span key={item}>{item}</span>)}
                   </div>
                 </div>
               ))}
@@ -51,5 +52,3 @@ function About() {
     </section>
   )
 }
-
-export default About

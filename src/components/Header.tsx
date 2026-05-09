@@ -1,24 +1,21 @@
 import { useState, useEffect } from 'react'
 
 const links = [
-  { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
+  { label: 'About',      href: '#about' },
+  { label: 'Projects',   href: '#projects' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact',    href: '#contact' },
 ]
 
-function Header() {
-  const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
+export default function Header() {
+  const [scrolled,  setScrolled]  = useState(false)
+  const [menuOpen,  setMenuOpen]  = useState(false)
 
   useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 24)
+    const fn = () => setScrolled(window.scrollY > 16)
     window.addEventListener('scroll', fn, { passive: true })
     return () => window.removeEventListener('scroll', fn)
   }, [])
-
-  // Close menu on nav click
-  const handleNavClick = () => setMenuOpen(false)
 
   return (
     <header className={scrolled ? 'scrolled' : ''}>
@@ -38,17 +35,15 @@ function Header() {
         >
           <span /><span /><span />
         </button>
-
-        {menuOpen && (
-          <nav className="nav-mobile">
-            {links.map(({ label, href }) => (
-              <a key={href} href={href} onClick={handleNavClick}>{label}</a>
-            ))}
-          </nav>
-        )}
       </div>
+
+      {menuOpen && (
+        <nav className="nav-mobile">
+          {links.map(({ label, href }) => (
+            <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>
+          ))}
+        </nav>
+      )}
     </header>
   )
 }
-
-export default Header
