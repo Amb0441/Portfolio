@@ -15,8 +15,7 @@ export default function About() {
     <section id="about" ref={ref as React.RefObject<HTMLElement>} className={`reveal${inView ? ' in-view' : ''}`}>
       <div className="wrap">
         <div className="section-head">
-          <span className="label">About</span>
-          <h2>Who I am</h2>
+          <h2>About <em>me</em></h2>
         </div>
 
         <div className="about-grid">
