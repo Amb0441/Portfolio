@@ -45,8 +45,8 @@ export default function Landing() {
           </h1>
 
           <p className="hero-role">
-            Full-stack developer based in Baguio, Philippines.
-            I build clean, performant web applications with sharp attention to detail.
+            Full-stack developer building clean, performant web applications
+            with sharp attention to detail.
           </p>
 
           <div className="hero-cta">
@@ -68,7 +68,6 @@ export default function Landing() {
           <div className="hero-photo">
             <img src={IMG} alt="Anthony Ballestra" />
           </div>
-          <span className="hero-tag">📍 Baguio City, PH</span>
         </div>
       </div>
     </section>
