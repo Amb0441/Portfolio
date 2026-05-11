@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react'
 
 const links = [
-  { label: 'About',      href: '#about' },
-  { label: 'Projects',   href: '#projects' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Contact',    href: '#contact' },
+  { label: 'About',     href: '#about' },
+  { label: 'Projects',  href: '#projects' },
+  { label: 'Education', href: '#experience' },
+  { label: 'Contact',   href: '#contact' },
 ]
 
 export default function Header() {
-  const [scrolled,  setScrolled]  = useState(false)
-  const [menuOpen,  setMenuOpen]  = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 16)
