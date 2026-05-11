@@ -10,23 +10,7 @@ const projects = [
     repo: 'https://github.com/Amb0441/BANNED-AJ1-1985',
     live: 'https://banned-aj-1-1985.vercel.app',
   },
-  {
-    id: '2',
-    title: 'Analytics Dashboard',
-    year: '2024',
-    desc: 'Analytics dashboard powered by PostgreSQL and a GraphQL API with real-time data visualisation and role-based access control.',
-    tags: ['Node.js', 'PostgreSQL', 'GraphQL', 'Recharts'],
-    repo: '#',
-  },
-  {
-    id: '3',
-    title: 'Monorepo Scaffold CLI',
-    year: '2025',
-    desc: 'CLI tool that automates scaffolding and enforces project conventions across a monorepo — shaving hours off new-project setup.',
-    tags: ['TypeScript', 'CLI', 'Tooling'],
-    repo: '#',
-    live: '#',
-  },
+
 ]
 
 export default function Projects() {

@@ -1,4 +1,4 @@
-const IMG = '/PROFILE.png'
+const IMG = `${import.meta.env.BASE_URL}PROFILE.png`
 
 const socials = [
   {

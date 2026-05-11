@@ -1,6 +1,6 @@
 import { useInView } from '../hooks/useInView'
 
-const IMG = '/PROFILE.png'
+const IMG = `${import.meta.env.BASE_URL}PROFILE.png`
 
 const skills = [
   { cat: 'Frontend', items: ['React', 'TypeScript', 'CSS / Tailwind', 'Vite'] },
