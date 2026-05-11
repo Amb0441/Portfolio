@@ -27,7 +27,7 @@ export default function About() {
           <div className="about-body">
              {(['I specialize in ERP systems, full-stack development, and database management — building practical, scalable solutions from the ground up.',
                 'Currently finishing my BS in Information Technology at the University of the Cordilleras. Coursework includes software engineering and systems design.',
-                'I leverage AI tools to ship faster while staying focused on what matters — architecture, performance, and user experience.',
+                'I focus on writing clean, maintainable code and building applications that are both performant and user-friendly.',
              ] as string[]).map((text, i) => (
               <p key={i} className="reveal-child" style={{ '--delay': `${0.1 + i * 0.1}s` } as React.CSSProperties}>{text}</p>
             ))}

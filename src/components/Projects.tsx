@@ -5,12 +5,19 @@ const projects = [
     id: '1',
     title: 'BANNED AJ1 1985',
     year: '2026',
-    desc: 'Interactive digital archive exploring the history, marketing, and cultural impact of the 1985 "Banned" Air Jordan 1. Features custom cursor, cinematic hero, and scroll animations.',
+    desc: 'Interactive digital archive exploring the history, marketing, and cultural impact of the 1985 "Banned" Air Jordan 1 — built with vanilla JS, custom cursor effects, a cinematic hero section, and scroll-driven animations.',
     tags: ['HTML', 'CSS', 'JavaScript', 'UI/UX'],
     repo: 'https://github.com/Amb0441/BANNED-AJ1-1985',
     live: 'https://banned-aj-1-1985.vercel.app',
   },
-
+  {
+    id: '2',
+    title: 'APEX FINANCE',
+    year: '2026',
+    desc: 'Gamified personal finance app that turns saving into a game with consistency streaks, savings goals, badge rewards, and a spending dashboard — designed to make financial discipline engaging and rewarding. (Still in development)',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    repo: 'https://github.com/Amb0441/APEX-FINANCE',
+  },
 ]
 
 export default function Projects() {
